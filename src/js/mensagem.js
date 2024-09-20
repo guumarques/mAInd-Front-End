@@ -112,7 +112,7 @@ let urlAPI = 'https://web-production-11e8.up.railway.app/mAInd';
 let urlTeste = 'http://127.0.0.1:5000/mAInd';
 // Função para iniciar a conversa e obter o user_id
 function iniciarConversa() {
-    fetch('${urlAPI}/start', {
+    fetch(`${urlAPI}/start`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
