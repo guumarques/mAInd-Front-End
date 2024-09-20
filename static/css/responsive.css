@@ -1,0 +1,166 @@
+/* RESPONSIVE */
+@media (min-width: 1024px) {
+    /* Doenças */
+
+    .Mensagens { 
+        width: 100%;
+    } 
+
+    .Campo {
+        width: 88.8%;
+    }
+
+    /* Fim do Doenças */
+}
+
+@media (max-width: 1024px){
+    /* Chat */
+    .conteudo-mensagem{
+        font-size: 16px;
+    }
+    .Campo{
+        width: 85vw;
+        left: 10vw;
+    }
+
+    .Maind{
+        font-size: 42px;
+    }
+    /* Fim do Chat */
+
+    /* Menu */
+    .Icone img{
+        width: 28px;
+    }
+    /* Fim do Menu */
+}
+
+@media (max-width: 768px) {
+
+    /* Index */
+    .slogan {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .texto-butao {
+        font-size: 24px;
+    }
+
+    /* Fim do Index */
+
+    /* Menu */
+    .Icone-menu{
+        height:36px;
+        width:36px;
+    }
+
+    .Menu-icone{
+        width: fit-content;
+    }
+
+    .TopicoDasConversas,
+    .SettingsAndHelp{
+        gap: 8px;
+        padding: 4px;
+    }
+    /* Fim do Menu */
+
+    /* Doenças */
+    .Chat-conversas {
+        padding: 12px 18px;
+    }
+
+    .Maind {
+        font-size: 36px;
+    }
+
+    .Mensagens {
+        padding: 0px 0px;
+        gap: 10px;
+        width: 100%;
+        /* background: purple; */
+    }
+
+    .Titulo {
+        font-size: 18px;
+    }
+
+    .Subtitulo {
+        font-size: 14px;
+    }
+
+    .text-mensage {
+        font-size: 12px;
+    }
+
+    /* Fim do Doenças */
+
+    /* Chat */
+    .Campo{
+        width: 87.5%;
+        left: 71px;
+    }
+
+    .Mensagem-base{
+        padding: 6px 10px;
+    }
+
+    .Enviar{
+        height: 24px;
+        width: 24px;
+    }
+
+    .Enviar img{
+        position: relative;
+        top: -2px;
+    }
+    /* Fim do Chat */
+
+}
+
+@media (max-width: 425px) {
+    /* Menu */
+    .Menu{
+        padding: 8px 4px;
+    }
+
+    .Icone-menu {
+        width: 28px;
+        height: 28px;
+    }
+
+    .text-menu{
+        font-size: 18px;
+        font-weight: 300;
+    }
+
+    /* Fim do Menu */
+
+    /* Doenças */
+    .Chat-conversas{
+        padding: 12px 12px;
+    }
+
+    .Mensagens{
+        width: 100%;
+    }
+
+    .Maind{
+        font-size: 28px;
+    }
+    /* Fim de Doenças */
+
+    /* Chat */
+    .Campo{
+        width: 86%;
+        left: 50px;
+    }
+    /* Fim do Chat */
+}
+
+@media(max-width: 320px){
+    .Campo {
+        width: 82%
+    }
+}

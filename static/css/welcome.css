@@ -1,0 +1,42 @@
+.welcome {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 36px;
+    padding: 24px;
+}
+
+img {
+    height: 216px;
+    width: 198px;
+    object-fit: cover;
+}
+
+.slogan {
+    color: #49AEE6;
+    font-size: 48px;
+    line-height: 1;
+    font-family: 'Merriweather', serif;
+}
+
+.butao {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    padding: 4px;
+    background-color: #C627F2;
+    border: #49AEE6 solid 1px;
+    border-radius: 12px;
+}
+
+.texto-butao {
+    color: #031326;
+    font-size: 36px;
+    font-family: 'Lato' sans-serif;
+    font-weight: 600;
+    padding: 4px;
+}

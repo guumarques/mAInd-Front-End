@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mAInd</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/static/css/global.css">
+    <link rel="stylesheet" href="/static/css/menu.css">
+    <link rel="stylesheet" href="/static/css/chat.css">
+    <link rel="stylesheet" href="/static/css/responsive.css">
+</head>
+
+<body>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('/static/menu.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('menu-container').innerHTML = data;
+                });
+        });
+    </script>
+    <div class="Chat">
+        <!-- Menu será carregado aqui -->
+        <div id="menu-container"></div>
+
+        <div class="Chat-conversas">
+            <div class="Titulo-page">
+                <div class="Maind">
+                    Maind
+                </div>
+            </div>
+            <div class="Mensagens">
+                <div class="Titulo">
+                    Estresse: O que é, sintomas e como aliviar 
+                </div>
+                <div class="Subtitulo">O que é estresse?</div>
+                <div class="text-mensage">
+                    O estresse é uma reação natural do nosso organismo a situações de perigo ou ameaça. Essa reação nos
+                    prepara para enfrentar desafios, liberando hormônios que aumentam nossa energia e atenção. No
+                    entanto, quando o estresse se torna crônico, ou seja, persistente e excessivo, pode causar diversos
+                    problemas de saúde física e mental.
+                </div>
+                <div class="Subtitulo"> Quais são os sintomas do estresse? </div>
+                <div class="text-mensage">
+                    Os sintomas do estresse podem variar de pessoa para pessoa e podem ser tanto físicos quanto
+                    emocionais. Alguns dos sintomas mais comuns incluem:
+                    <ul>
+                        <li>Sintomas físicos: Dores de cabeça, tensão muscular, problemas digestivos, insônia,
+                            fadiga, alterações no apetite, taquicardia, sudorese.<br /></li>
+                        <li>Sintomas emocionais: Irritabilidade, ansiedade, dificuldade de concentração, sentimentos
+                            de sobrecarga, dificuldade em relaxar, mudanças de humor, sensação de estar sempre no
+                            limite.</li>
+                    </ul>
+                </div>
+                <div class="Subtitulo"> Como aliviar o estresse? </div>
+                <div class="text-mensage">
+                    Existem diversas estratégias que podem ajudar a aliviar o estresse, tanto no curto quanto no
+                        longo prazo. É importante encontrar as técnicas que funcionam melhor para você e combiná-las com
+                        um estilo de vida mais saudável. Algumas opções incluem:
+                    <ul>
+                            <li>Técnicas de relaxamento: Pratique técnicas como respiração profunda, meditação, yoga e
+                                relaxamento muscular progressivo.<br />
+                            </li>
+                            <li>Exercícios físicos: A atividade física regular ajuda a reduzir o estresse e a melhorar o
+                                humor.<br />
+                            </li>
+                            <li>Gerenciamento do tempo: Organize suas tarefas, estabeleça prioridades e evite a
+                                procrastinação.<br />
+                            </li>
+                            <li>Boa alimentação: Uma dieta equilibrada fornece os nutrientes necessários para o corpo e
+                                a mente.<br />
+                            </li>
+                            <li>Sono adequado: Durma pelo menos 7-8 horas por noite para garantir um bom descanso.<br />
+                            </li>
+                            <li>Conecte-se com outras pessoas: Mantenha contato com amigos e familiares e participe de
+                                atividades sociais.<br />
+                            </li>
+                            <li>Limite o consumo de cafeína e álcool: Essas substâncias podem aumentar a ansiedade e
+                                dificultar o sono.<br />
+                            </li>
+                            <li>Terapia: A terapia pode ajudar a identificar e lidar com as causas do estresse.
+                            </li>
+                        </ul>
+                </div>
+                <div class="Subtitulo">
+                    É importante lembrar que o estresse é uma reação comum, mas que pode ser gerenciada. Se você está
+                    sentindo que o estresse está afetando sua vida de forma negativa, procure ajuda de um profissional
+                    de saúde.
+                </div>
+                <div class="text-mensage">
+                    Este texto tem caráter informativo e não substitui a consulta a um médico.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mAInd</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/static/css/global.css">
+    <link rel="stylesheet" href="/static/css/menu.css">
+    <link rel="stylesheet" href="/static/css/chat.css">
+    <link rel="stylesheet" href="/static/css/responsive.css">
+</head>
+
+<body>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('/static/menu.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('menu-container').innerHTML = data;
+                });
+        });
+    </script>
+    <div class="Chat">
+        <!-- Menu será carregado aqui -->
+        <div id="menu-container"></div>
+
+        <div class="Chat-conversas">
+            <div class="Titulo-page">
+                <div class="Maind">
+                    Maind
+                </div>
+            </div>
+            <div class="Mensagens">
+                <div class="Titulo">
+                    Solidão: O que é, sintomas e como lidar
+                </div>
+                <div class="Subtitulo"> O que é solidão? </div>
+                <div class="text-mensage">
+                    A solidão é um sentimento de desconexão com os outros, uma sensação de isolamento social, mesmo
+                    quando se está rodeado de pessoas. É importante diferenciar a solidão da solitude, que é a escolha
+                    consciente de passar tempo sozinho. A solidão, por sua vez, é um estado emocional que pode ser
+                    doloroso e impactar negativamente a saúde mental.
+                </div>
+                <div class="Subtitulo"> Quais são os sintomas da solidão? </div>
+                <div class="text-mensage">
+                    Os sintomas da solidão podem variar de pessoa para pessoa, mas geralmente incluem:
+                    <ul>
+                            <li>Sentimentos de tristeza e melancolia: Uma sensação constante de vazio e falta de
+                                propósito.<br />
+                            </li>
+                            <li>Ansiedade e nervosismo: Dificuldade em relaxar e medo de rejeição.<br />
+                            </li>
+                            <li>Baixa autoestima: Sentimentos de inferioridade e inadequação.<br />
+                            </li>
+                            <li>Dificuldade em dormir: Insônia ou sono excessivo.<br />
+                            </li>
+                            <li>Alterações no apetite: Comer demais ou de menos.<br />
+                            </li>
+                            <li>Falta de interesse em atividades sociais: Isolamento e evitamento de interações
+                                sociais.<br />
+                            </li>
+                            <li>Pensamentos negativos: Tendência a ruminar sobre experiências negativas e a se criticar.
+                            </li>
+                        </ul>
+                </div>
+                <div class="Subtitulo"> Como lidar com a solidão? </div>
+                <div class="text-mensage">
+                    Lidar com a solidão requer proatividade e pode envolver diferentes estratégias, dependendo das
+                        causas e da intensidade do sentimento. Algumas sugestões incluem:
+                    <ul>
+                            <li>Conecte-se com outras pessoas: Retome o contato com amigos e familiares, participe de
+                                grupos e atividades sociais, voluntarie-se em uma causa que você acredita.<br />
+                            </li>
+                            <li>Cultive novas amizades: Inscreva-se em cursos, junte-se a clubes ou grupos de interesse,
+                                use aplicativos de relacionamento.<br />
+                            </li>
+                            <li>Explore seus hobbies: Dedique tempo a atividades que você gosta e que te trazem
+                                prazer.<br />
+                            </li>
+                            <li>Busque ajuda profissional: Um terapeuta pode te ajudar a identificar as causas da sua
+                                solidão e desenvolver estratégias para lidar com ela.<br />
+                            </li>
+                            <li>Pratique a autocompaixão: Seja gentil consigo mesmo e reconheça que todos se sentem
+                                sozinhos de vez em quando.<br />
+                            </li>
+                            <li>Cuide de sua saúde física: Uma alimentação equilibrada, prática regular de exercícios
+                                físicos e um bom sono podem melhorar seu bem-estar geral.<br />
+                            </li>
+                            <li>Desenvolva habilidades sociais: Aprender a iniciar conversas, fazer elogios e expressar
+                                seus sentimentos pode facilitar a conexão com outras pessoas.
+                            </li>
+                        </ul>
+                </div>
+                <div class="Subtitulo">
+                    É importante lembrar que a solidão é um sentimento normal e que pode ser superado. Ao buscar ajuda e
+                    tomar medidas para se conectar com os outros, é possível encontrar mais significado e propósito na
+                    vida.
+                </div>
+                <div class="text-mensage">
+                    Este texto tem caráter informativo e não substitui a consulta a um médico.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="/static/js/index.js"></script>
+</body>
+
+</html>

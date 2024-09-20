@@ -1,0 +1,69 @@
+/* Menu */
+.Menu {
+    height: 100vh;
+    padding: 16px 8px;
+    background: #2666A6;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Menu.ativo {
+    background-color: goldenrod;
+}
+
+.Menu-icone .SettingsAndHelp .Icone {
+    width: 24px;
+    height: 24px;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Icone-menu {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Icone-menu img {
+    width: 100%;
+    height: 100%;
+}
+
+.TopicoDasConversas {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-grow: 1;
+}
+
+.text-menu {
+    color: white;
+    font-size: 24px;
+}
+
+.SettingsAndHelp {
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.SettingsAndHelp .bottom-menu{
+    justify-content: end;
+}
+
+.bottom-menu {
+    padding-bottom: 6px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Fim do Menu */

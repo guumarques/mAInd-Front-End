@@ -1,0 +1,202 @@
+/* --------------------------------- */
+/* Estilos Gerais para o Chat */
+/* --------------------------------- */
+
+/* Container principal do chat */
+.Chat {
+    width: 100vw;
+    display: flex;
+}
+
+/* Área de conversas do chat */
+.Chat-conversas {
+    height: 100vh;
+    padding: 24px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    margin: 0;
+    overflow: auto;
+}
+
+/* Título da página */
+.Titulo-page {
+    width: 100%;
+}
+
+/* Estilo do título principal */
+.Maind {
+    color: white;
+    font-size: 48px;
+    font-family: Montserrat;
+    word-wrap: break-word;
+}
+
+/* Estilos para Mensagens e Conteúdo */
+.Mensagens,
+.Conteudo {
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Área das mensagens */
+.Mensagens {
+    padding: 8px 16px;
+    flex: 1;
+    /* justify-content: start; */
+}
+
+/* Conteúdo geral */
+.Conteudo {
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+/* Estilo do logo */
+.Logo {
+    width: 198px;
+    height: 216px;
+}
+
+/* Campo de entrada de mensagem */
+.Campo {
+    height: 40px;
+    padding: 20px 10px;
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 2vh;
+}
+
+/* Estilo do input de mensagem */
+.input-mensagem {
+    width: 100%;
+    height: 40px;
+}
+
+/* Ícone dentro do campo */
+.Campo .Icone {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* --------------------------------- */
+/* Estilos para Mensagens */
+/* --------------------------------- */
+
+/* Container para cada mensagem */
+.Mensagem {
+    width: 100%;
+}
+
+/* Estilo base das mensagens */
+.Mensagem-base {
+    background-color: white;
+    padding: 8px 12px;
+    border-radius: 16px 0 16px 16px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: start;
+}
+
+/* Estilo específico para mensagens da IA */
+.Mensagem-ia {
+    border-radius: 0 16px 16px 16px;
+    width: fit-content;
+}
+
+/* Estilo específico para mensagens do usuário */
+.Mensagem-usuario {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+/* Conteúdo do texto da mensagem */
+.conteudo-mensagem {
+    color: black;
+    font-size: 20px;
+    font-family: Montserrat;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+/* Botão de enviar */
+.Enviar {
+    cursor: pointer;
+    background: transparent;
+}
+
+/* --------------------------------- */
+/* Estilos Específicos para Doenças */
+/* --------------------------------- */
+
+/* Personalização da barra de rolagem */
+.Chat-conversas::-webkit-scrollbar {
+    width: 8px;
+}
+
+.Chat-conversas::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.Chat-conversas::-webkit-scrollbar-thumb {
+    background-color: #cecece;
+    border-radius: 10px;
+    border: 2px solid transparent;
+}
+
+.Chat-conversas::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+/* Estilo dos títulos */
+.Titulo {
+    color: white;
+    font-size: 24px;
+    font-family: Merriweather, serif;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+
+/* Estilo dos subtítulos */
+.Subtitulo {
+    color: white;
+    font-size: 20px;
+    font-family: Lato, sans-serif;
+    font-weight: 600;
+    word-wrap: break-word;
+}
+
+/* Estilo do texto das mensagens */
+.text-mensage {
+    color: white;
+    font-size: 16px;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+/* Estilo das listas */
+ul {
+    list-style-position: inside;
+}
+
+/* --------------------------------- */
+/* Fim dos Estilos */
+/* --------------------------------- */

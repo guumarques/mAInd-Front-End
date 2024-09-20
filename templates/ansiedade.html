@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mAInd</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/static/css/global.css">
+    <link rel="stylesheet" href="/static/css/menu.css">
+    <link rel="stylesheet" href="/static/css/chat.css">
+    <link rel="stylesheet" href="/static/css/responsive.css">
+</head>
+
+<body>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('/static/menu.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('menu-container').innerHTML = data;
+                });
+        });
+    </script>
+    <div class="Chat">
+        <!-- Menu será carregado aqui -->
+        <div id="menu-container"></div>
+
+        <div class="Chat-conversas">
+            <div class="Titulo-page">
+                <div class="Maind">
+                    Maind
+                </div>
+            </div>
+            <div class="Mensagens">
+                <div class="Titulo">
+                    Ansiedade: O que é, sintomas e como aliviar
+                </div>
+                <div class="Subtitulo">O que é ansiedade?</div>
+                <div class="text-mensage">
+                    A ansiedade é uma emoção natural que todos nós sentimos em algum momento da vida. Ela serve como um
+                    mecanismo de defesa, alertando-nos para situações de perigo ou estresse. No entanto, quando a
+                    ansiedade se torna excessiva e constante, pode interferir significativamente na qualidade de vida,
+                    caracterizando um transtorno de ansiedade.
+                </div>
+                <div class="Subtitulo">Quais são os sintomas da ansiedade?</div>
+                <div class="text-mensage">
+                    Os sintomas da ansiedade podem variar de pessoa para pessoa e podem ser tanto físicos quanto
+                    emocionais. Alguns dos sintomas mais comuns incluem:
+                    <ul>
+                        <li>Sintomas físicos: taquicardia, sudorese, tremores, dificuldade para respirar, dores de
+                            cabeça, tensão muscular, insônia, problemas digestivos.</li>
+                        <li>Sintomas emocionais: preocupação excessiva, irritabilidade, dificuldade de concentração,
+                            sensação de nervosismo constante, medo irracional, sentimento de incapacidade.</li>
+                    </ul>
+                </div>
+                <div class="Subtitulo">Como aliviar a ansiedade?</div>
+                <div class="text-mensage">
+                    Existem diversas estratégias que podem ajudar a aliviar a ansiedade, tanto no curto quanto no
+                    longo prazo. É importante ressaltar que o tratamento da ansiedade deve ser individualizado e pode
+                    envolver diferentes abordagens. Algumas das opções mais comuns incluem:
+                    <ul>
+                        <li>Terapias: A terapia cognitivo-comportamental (TCC) é uma das terapias mais eficazes para
+                            o tratamento da ansiedade. Ela ajuda a identificar e modificar pensamentos e comportamentos que
+                            contribuem para a ansiedade.</li>
+                        <li>Meditação e mindfulness: Práticas de mindfulness, como a meditação, ajudam a desenvolver a atenção plena e a reduzir a ansiedade no momento presente.</li>
+                        <li>Exercícios físicos: A prática regular de atividades físicas libera endorfinas, que têm um efeito relaxante e ajudam a reduzir o estresse.</li>
+                        <li>Técnicas de relaxamento: Técnicas como respiração profunda, relaxamento muscular progressivo e yoga podem ajudar a reduzir a tensão física e mental.</li>
+                        <li>Boa alimentação: Uma dieta equilibrada, rica em frutas, legumes e grãos integrais, pode contribuir para o bem-estar geral e ajudar a controlar a ansiedade.</li>
+                        <li>Sono adequado: Uma boa noite de sono é essencial para a saúde mental e pode ajudar a reduzir a ansiedade.</li>
+                        <li>Redução do consumo de cafeína e álcool: Essas substâncias podem aumentar a ansiedade e dificultar o sono.</li>
+                        <li>Medicamentos: Em alguns casos, o médico pode prescrever medicamentos ansiolíticos ou antidepressivos para ajudar a controlar os sintomas da ansiedade.</li>
+                    </ul>
+                </div>
+                <div class="Subtitulo">
+                    É importante lembrar que a ansiedade é um problema de saúde que pode ser tratado com sucesso. Se
+                    você está sofrendo com ansiedade, procure ajuda de um profissional de saúde mental.
+                </div>
+                <div class="text-mensage">
+                    Este texto tem caráter informativo e não substitui a consulta a um médico.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="/static/js/index.js"></script>
+</body>
+
+</html>

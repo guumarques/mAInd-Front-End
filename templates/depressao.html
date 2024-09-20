@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mAInd</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/static/css/global.css">
+    <link rel="stylesheet" href="/static/css/menu.css">
+    <link rel="stylesheet" href="/static/css/chat.css">
+    <link rel="stylesheet" href="/static/css/responsive.css">
+</head>
+
+<body>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('/static/menu.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('menu-container').innerHTML = data;
+                });
+        });
+    </script>
+    <div class="Chat">
+        <!-- Menu será carregado aqui -->
+        <div id="menu-container"></div>
+
+        <div class="Chat-conversas">
+            <div class="Titulo-page">
+                <div class="Maind">
+                    Maind
+                </div>
+            </div>
+            <div class="Mensagens">
+                <div class="Titulo">
+                    Depressão: O que é, sintomas e como aliviar
+                </div>
+                <div class="Subtitulo">O que é depressão?</div>
+                <div class="text-mensage">
+                    A depressão é um transtorno mental que afeta a forma como você se sente, pensa e age. É muito mais
+                    do que apenas se
+                    sentir triste por alguns dias. A depressão causa sentimentos de tristeza, perda de interesse e
+                    prazer em atividades que
+                    antes eram agradáveis, e pode afetar significativamente a sua vida diária.
+                </div>
+                <div class="Subtitulo">Quais são os sintomas da depressão?</div>
+                <div class="text-mensage">
+                    Os sintomas da ansiedade podem variar de pessoa para pessoa e podem ser tanto físicos quanto
+                    emocionais. Alguns dos sintomas mais comuns incluem:
+                    <ul>
+                            <li>Sintomas emocionais: Tristeza profunda, perda de interesse em atividades, sentimento de
+                                culpa ou inutilidade, irritabilidade, angústia, desespero, dificuldade em se concentrar,
+                                dificuldade em tomar decisões, pensamentos de morte ou suicídio.<br />
+                            </li>
+                            <li>Sintomas físicos: Fadiga, alterações no apetite (comer demais ou de menos), alterações
+                                no sono (insônia ou sono excessivo), dores musculares ou de cabeça, problemas
+                                digestivos, perda de energia.
+                            </li>
+                        </ul>
+                </div>
+                <div class="Subtitulo"> Como aliviar a depressão? </div>
+                <div class="text-mensage">
+                    O tratamento da depressão geralmente combina terapia e medicamentos. É importante buscar ajuda
+                    profissional para um diagnóstico preciso e um plano de tratamento individualizado. Algumas
+                    opções de tratamento incluem:
+                    <ul>
+                        <li>Terapia: A psicoterapia, como a terapia cognitivo-comportamental (TCC), pode ajudar a
+                            identificar e modificar pensamentos e comportamentos negativos.<br />
+                        </li>
+                        <li>Medicamentos: Antidepressivos podem ajudar a regular os neurotransmissores no cérebro e
+                            aliviar os sintomas da depressão.<br />
+                        </li>
+                        <li>Eletroconvulsoterapia (ECT): Em casos graves, a ECT pode ser uma opção de
+                            tratamento.<br />
+                        </li>
+                        <li>Outros tratamentos: Terapia de luz, estimulação magnética transcraniana (EMT) e
+                            exercícios físicos também podem ser úteis em alguns casos.<br />
+                        </li>
+                    </ul>
+                    Além do tratamento profissional, algumas estratégias podem ajudar a aliviar os sintomas da
+                    depressão:
+                    <ul>
+                        <li>Mantenha uma rotina: Tente manter uma rotina regular de sono, alimentação e
+                            atividades.<br />
+                        </li>
+                        <li>Pratique atividades físicas: O exercício físico pode aumentar os níveis de endorfinas,
+                            que têm um efeito positivo no humor.<br />
+                        </li>
+                        <li>Conecte-se com outras pessoas: Mantenha contato com amigos e familiares e participe de
+                            atividades sociais.<br />
+                        </li>
+                        <li>Cuide de sua alimentação: Uma dieta equilibrada pode fornecer os nutrientes necessários
+                            para o bem-estar mental.<br />
+                        </li>
+                        <li>Reduza o consumo de álcool e cafeína: Essas substâncias podem piorar os sintomas da
+                            depressão.<br />
+                        </li>
+                        <li>Aprenda técnicas de relaxamento: Pratique técnicas como meditação, yoga ou respiração
+                            profunda para reduzir o estresse.
+                        </li>
+                    </ul>
+                </div>
+                <div class="Subtitulo">
+                    É importante lembrar que a depressão é uma doença tratável e que você não precisa passar por isso
+                    sozinho. Se você está se sentindo triste, desesperançoso ou pensando em se machucar, procure ajuda
+                    imediatamente.
+                </div>
+                <div class="text-mensage">
+                    Este texto tem caráter informativo e não substitui a consulta a um médico.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="/static/js/index.js"></script>
+</body>
+
+</html>
