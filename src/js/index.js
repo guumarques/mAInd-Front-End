@@ -2,7 +2,7 @@ let botaoMenu = false;
 const textoLinks = ['Chat', 'Ansiedade', 'Depressão', 'Estresse', 'Solidão', 'Help', 'Settings'];
 
 document.addEventListener('DOMContentLoaded', function () {
-    fetch('/static/menu.html')
+    fetch('menu.html')
         .then(response => response.text())
         .then(data => {
             document.getElementById('menu-container').innerHTML = data;
@@ -84,7 +84,7 @@ function addElementos(descricao) {
 function alterarSrcImagemComBaseNoTitulo() {
     const url = window.location.href;
     const partes = url.replace('.html', '').split('/');
-    const novoSrc = `/static/icons/${partes[partes.length - 1]}-ativo.svg`;
+    const novoSrc = `../src/icons/${partes[partes.length - 1]}-ativo.svg`;
 
     const icons = document.querySelectorAll('.icon-img');
     icons.forEach((icon) => {
