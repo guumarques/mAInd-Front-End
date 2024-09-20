@@ -107,3 +107,48 @@ function adicionarMensagem(remetente, mensagem) {
 function resposta(respostaUsuario) {
     enviarResposta(respostaUsuario);
 }
+
+let urlAPI = 'https://web-production-11e8.up.railway.app/mAInd';
+let urlTeste = 'http://127.0.0.1:5000/mAInd';
+// Função para iniciar a conversa e obter o user_id
+function iniciarConversa() {
+    fetch('${urlTeste}/start', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        }
+    })
+        .then(response => response.json())
+        .then(data => {
+            userId = data.user_id; // Armazena o user_id retornado
+            criarMensagemIa(data.response_text); // Mostra a primeira pergunta
+            console.log('Conversa iniciada, user_id:', userId);
+            conversas.unshift({ 'id': userId });
+        })
+        .catch(error => console.error('Erro ao iniciar conversa:', error));
+}
+
+// Função para enviar respostas, agora incluindo o user_id
+function enviarResposta(resposta) {
+    if (!userId) {
+        console.error('Conversa não iniciada. user_id não encontrado.');
+        return;
+    }
+
+    fetch(urlTeste, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            user_id: userId,  // Inclui o user_id na requisição
+            text_mensage: resposta
+        }),
+    })
+        .then(response => response.json())
+        .then(data => {
+            criarMensagemIa(data.response_text);
+            console.log('data', data);
+        })
+        .catch(error => console.error('Error:', error));
+}
