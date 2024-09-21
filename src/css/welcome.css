@@ -17,9 +17,10 @@ img {
 
 .slogan {
     color: #49AEE6;
-    font-size: 48px;
+    font-size: 34px;
     line-height: 1;
     font-family: 'Merriweather', serif;
+    text-align: center; /* Centraliza o texto */
 }
 
 .butao {
